@@ -1,0 +1,90 @@
+* {
+    background-color: aqua;
+}
+
+.padre {
+    background-color: blueviolet;
+    display: grid;
+    grid-template-areas: "ind ind ind"
+        "pr pr pr"
+        "izq cen der "
+        "fot fot fot";
+}
+
+.padre1 {
+    background-color: chartreuse;
+    display: grid;
+    grid-template-areas: "im1 im2"
+        "pie1 pie1";
+
+}
+
+.im1 {
+    background-color: aquamarine;
+    grid-area: im1;
+
+}
+
+.im2 {
+    background-color: aqua;
+    grid-area: im2;
+
+}
+
+.pie1 {
+    background-color: brown;
+    grid-area: pie1;
+}
+
+.ind {
+    grid-area: ind;
+    background-color: chartreuse;
+}
+
+.pr {
+    grid-area: pr;
+
+    background-color: brown;
+}
+
+.izq {
+    grid-area: izq;
+    background-color: blueviolet;
+}
+
+.cen {
+    grid-area: cen;
+    background-color: darkblue;
+    overflow: hidden;
+    /* Evita desbordamiento */
+}
+
+.cen img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.der {
+    grid-area: der;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.fot {
+    grid-area: fot;
+    background-color: darkmagenta;
+}

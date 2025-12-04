@@ -1,0 +1,24 @@
+.padre1 {
+    background-color: chartreuse;
+    display: grid;
+    grid-template-areas: "im1 im2"
+        "pie1 pie1";
+
+}
+
+.im1 {
+    background-color: aquamarine;
+    grid-area: im1;
+
+}
+
+.im2 {
+    background-color: aqua;
+    grid-area: im2;
+
+}
+
+.pie1 {
+    background-color: brown;
+    grid-area: pie1;
+}
